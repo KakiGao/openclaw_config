@@ -53,11 +53,11 @@
       }
     },
     {
-      "id": "e1b8ab50-ffdb-4dd8-88c3-58e5962c012e",
+      "id": "d6c651ef-67db-4e45-afd5-862d7110c666",
       "name": "openclaw-skill-backup",
       "enabled": true,
-      "createdAtMs": 1770695063581,
-      "updatedAtMs": 1770695063581,
+      "createdAtMs": 1770700841428,
+      "updatedAtMs": 1770700841428,
       "schedule": {
         "kind": "cron",
         "expr": "0 11 * * *",
@@ -67,7 +67,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请执行OpenClaw技能备份:\\n\\n1. 运行: cd ~/.openclaw-git-backup && python3 scripts/backup_cron.py\\n2. 读取报告: cat backup_report.md\\n3. 发送总结到#技能备份报告频道"
+        "message": "请执行OpenClaw每日技能备份并发送Discord报告:\\n\\n1. 进入目录: cd ~/.openclaw-git-backup\\n2. 运行备份脚本: python3 scripts/backup_cron.py\\n3. 读取报告: cat ~/.openclaw-git-backup/scripts/backup_report.md\\n4. **完整发送备份报告内容到Discord #技能备份报告频道**\\n\\n频道目标: channel:1470626297976721573\\n\\n发送格式: Markdown格式的报告内容",
+        "timeoutSeconds": 180
       },
       "delivery": {
         "mode": "announce",
