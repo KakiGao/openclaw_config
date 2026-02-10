@@ -8,20 +8,14 @@ Version-controlled backup of OpenClaw configurations with full history tracking.
 ├── openclaw.json              # Main OpenClaw configuration
 ├── agents/                   # Agent configurations
 │   └── main/
-│       ├── agent/            # Agent settings (models, auth)
-│       └── sessions/         # Session history
+│       └── agent/            # Agent settings (models only, no auth)
 ├── workspace/                # Personalization
 │   ├── SOUL.md              # AI persona
 │   ├── USER.md              # User preferences
 │   ├── MEMORY.md            # Long-term memory
 │   ├── IDENTITY.md          # AI identity
 │   ├── AGENTS.md            # Agent notes
-│   ├── TOOLS.md             # Tool configurations
 │   └── *.md                 # Other workspace files
-├── credentials/              # Non-sensitive credentials
-│   └── discord-allowFrom.json
-├── devices/                 # Paired devices
-├── identity/                # Device identity
 ├── cron/                    # Scheduled tasks
 ├── custom_skills/           # Custom OpenClaw skills
 ├── SKILL.md                 # OpenClaw Git Backup skill documentation
@@ -33,10 +27,13 @@ Version-controlled backup of OpenClaw configurations with full history tracking.
 
 The following are **NOT** tracked in Git to protect sensitive information:
 
-- `agents/main/sessions/*.jsonl` - Contains API keys and conversation history
-- `credentials/*pairing*` - Authentication tokens
-- `identity/*` - Device authentication keys
-- API keys are stored as placeholders: `${API_KEY}`, `${DISCORD_BOT_TOKEN}`, etc.
+- `credentials/` - Authentication tokens and pairing files
+- `identity/` - Device authentication keys
+- `devices/` - Paired device information
+- `agents/main/sessions/*.jsonl` - Session history with API keys
+- `*.jsonl.lock` - Session lock files
+- `auth-profiles.json` - Authentication profiles
+- Any file containing secrets or tokens
 
 ## 🚀 Quick Start
 
@@ -103,13 +100,15 @@ git checkout COMMIT_HASH -- path/to/file
 
 | What | Description | Tracked |
 |------|-------------|---------|
-| Configuration | Main settings | ✅ |
+| Configuration | Main settings (tokens as placeholders) | ✅ |
 | Skills | Custom skills | ✅ |
-| Workspace | Personalization | ✅ |
+| Workspace | Personalization (SOUL, USER, MEMORY, etc.) | ✅ |
 | Crons | Scheduled tasks | ✅ |
-| Sessions | API keys inside | ❌ |
+| Models Config | Agent model configurations | ✅ |
 | Credentials | Sensitive tokens | ❌ |
-| Device ID | Authentication | ❌ |
+| Identity | Device authentication | ❌ |
+| Devices | Paired devices | ❌ |
+| Sessions | API keys and history | ❌ |
 
 ## 🔄 Automated Backup
 
@@ -128,15 +127,17 @@ crontab -l
 
 ### Environment Variables
 
-Create a `.env` file for sensitive configuration:
+Create a `.env` file for sensitive configuration (NOT tracked in Git):
 
 ```bash
-# OpenClaw API Keys
-OPENAI_API_KEY=your_key
-DISCORD_BOT_TOKEN=your_token
-MINIMAX_API_KEY=your_key
-GITHUB_TOKEN=your_token
+# OpenClaw API Keys (DO NOT commit real values)
+OPENAI_API_KEY=${OPENAI_API_KEY}
+DISCORD_BOT_TOKEN=${DISCORD_BOT_TOKEN}
+MINIMAX_API_KEY=${MINIMAX_API_KEY}
+GITHUB_TOKEN=${GITHUB_TOKEN}
 ```
+
+**Note**: The `openclaw.json` uses placeholders like `${API_KEY}` - replace these with real values when restoring.
 
 ### Custom Skills
 
@@ -147,6 +148,7 @@ Add custom skills to `custom_skills/` directory. They will be included in the ba
 - **API Keys**: Use environment variables or `.env` file. Do not commit real keys.
 - **Restoration**: After restore, restart OpenClaw Gateway to apply changes.
 - **Verification**: Always verify critical configurations after restoration.
+- **Security**: Sensitive directories (credentials, identity, devices) are excluded from Git tracking.
 
 ## 🔗 Related
 
