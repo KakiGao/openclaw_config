@@ -1,0 +1,31 @@
+# OpenClaw Git Backup - Exclude Sensitive Data
+# Tracking configurations, NOT secrets
+
+# Skip ALL sensitive directories
+credentials/
+identity/
+devices/
+
+# Skip session files (contain API keys and tokens)
+agents/main/sessions/*.jsonl
+agents/main/sessions/*.jsonl.lock
+
+# Skip sensitive credentials files
+*pairing*
+*allowFrom*
+auth-profiles.json
+
+# Skip logs and temp files
+*.log
+*.tmp
+.DS_Store
+
+# Skip large files
+node_modules/
+__pycache__/
+*.pyc
+
+# Skip secrets
+.env
+*.key
+*.pem

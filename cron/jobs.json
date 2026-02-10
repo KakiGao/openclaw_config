@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "d16bb835-122d-4dba-b80e-3d33be0e9e66",
+      "agentId": "main",
+      "name": "daily-intel-briefing",
+      "enabled": true,
+      "createdAtMs": 1770615011771,
+      "updatedAtMs": 1770685200060,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "🌅 每日 AI 情报时间！\n\n运行 intel-daily.sh 采集 8 个数据源并发送到 Discord。"
+      },
+      "state": {
+        "nextRunAtMs": 1770771600000,
+        "lastRunAtMs": 1770685200020,
+        "lastStatus": "skipped",
+        "lastDurationMs": 40,
+        "lastError": "empty-heartbeat-file"
+      }
+    },
+    {
+      "id": "e13762b0-a69b-41dc-9e7b-4882b6a8deb3",
+      "agentId": "main",
+      "name": "daily-intel",
+      "enabled": true,
+      "createdAtMs": 1770693420537,
+      "updatedAtMs": 1770693420537,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 intel-daily.sh 并发送到 Discord：\n\n1. 运行 `bash /Users/kaki/.openclaw/workspace/intel-daily.sh`\n2. 获取完整输出\n3. 发送到 #ai情报 频道 (channel ID: 1470432395424694384)\n4. 发送到新服务器 #ai情报 (channel ID: 1470437628074791023)\n\n使用 `message send` 工具，target 设为频道 ID。"
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "1470282523769835742",
+        "channel": "discord"
+      },
+      "state": {
+        "nextRunAtMs": 1770771600000
+      }
+    }
+  ]
+}
