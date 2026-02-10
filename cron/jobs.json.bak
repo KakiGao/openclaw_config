@@ -51,6 +51,32 @@
       "state": {
         "nextRunAtMs": 1770771600000
       }
+    },
+    {
+      "id": "e1b8ab50-ffdb-4dd8-88c3-58e5962c012e",
+      "name": "openclaw-skill-backup",
+      "enabled": true,
+      "createdAtMs": 1770695063581,
+      "updatedAtMs": 1770695063581,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 11 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请执行OpenClaw技能备份:\\n\\n1. 运行: cd ~/.openclaw-git-backup && python3 scripts/backup_cron.py\\n2. 读取报告: cat backup_report.md\\n3. 发送总结到#技能备份报告频道"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord",
+        "to": "channel:1470626297976721573"
+      },
+      "state": {
+        "nextRunAtMs": 1770778800000
+      }
     }
   ]
 }

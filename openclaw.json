@@ -50,7 +50,7 @@
       },
       "minimax-portal": {
         "baseUrl": "https://api.minimaxi.com/anthropic",
-        "apiKey": "minimax-oauth",
+        "apiKey": "${API_KEY}",
         "api": "anthropic-messages",
         "models": [
           {
