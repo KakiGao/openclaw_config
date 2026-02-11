@@ -57,21 +57,21 @@
       }
     },
     {
-      "id": "7535c773-c6e4-403f-ac49-98a27b040ba4",
+      "id": "59731767-1bfb-48ce-8f35-371bd17ab3f7",
       "name": "openclaw-skill-backup",
       "enabled": true,
-      "createdAtMs": 1770701087936,
-      "updatedAtMs": 1770778916680,
+      "createdAtMs": 1770779539164,
+      "updatedAtMs": 1770779539164,
       "schedule": {
         "kind": "cron",
-        "expr": "0 11 * * *",
+        "expr": "0 23 * * *",
         "tz": "Asia/Shanghai"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请执行OpenClaw每日技能备份:\\n\\n1. 运行: cd ~/.openclaw-git-backup && python3 scripts/backup.py\\n2. 完成后，发送备份总结到#技能备份报告频道\\n\\n总结格式:\\n- 时间\\n- 提交ID\\n- 已备份内容\\n- 已排除内容",
+        "message": "请执行OpenClaw每日技能备份:\\n\\n1. 运行: cd ~/.openclaw-git-backup && python3 scripts/backup.py\\n2. 完成后，发送备份总结到#技能备份报告频道",
         "timeoutSeconds": 180
       },
       "delivery": {
@@ -80,10 +80,8 @@
         "to": "channel:1470626297976721573"
       },
       "state": {
-        "nextRunAtMs": 1770865200000,
-        "lastRunAtMs": 1770778885664,
-        "lastStatus": "ok",
-        "lastDurationMs": 31016
+        "nextRunAtMs": 1770822000000,
+        "runningAtMs": 1770822000041
       }
     }
   ]
