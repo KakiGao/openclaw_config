@@ -7,7 +7,7 @@
       "name": "daily-intel-briefing",
       "enabled": true,
       "createdAtMs": 1770615011771,
-      "updatedAtMs": 1770685200060,
+      "updatedAtMs": 1770771600082,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -19,10 +19,10 @@
         "text": "🌅 每日 AI 情报时间！\n\n运行 intel-daily.sh 采集 8 个数据源并发送到 Discord。"
       },
       "state": {
-        "nextRunAtMs": 1770771600000,
-        "lastRunAtMs": 1770685200020,
+        "nextRunAtMs": 1770858000000,
+        "lastRunAtMs": 1770771600016,
         "lastStatus": "skipped",
-        "lastDurationMs": 40,
+        "lastDurationMs": 66,
         "lastError": "empty-heartbeat-file"
       }
     },
@@ -32,7 +32,7 @@
       "name": "daily-intel",
       "enabled": true,
       "createdAtMs": 1770693420537,
-      "updatedAtMs": 1770693420537,
+      "updatedAtMs": 1770771685197,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -49,15 +49,19 @@
         "channel": "discord"
       },
       "state": {
-        "nextRunAtMs": 1770771600000
+        "nextRunAtMs": 1770858000000,
+        "lastRunAtMs": 1770771600082,
+        "lastStatus": "error",
+        "lastDurationMs": 85115,
+        "lastError": "Error: Ambiguous Discord recipient \"1470282523769835742\". Use \"user:1470282523769835742\" for DMs or \"channel:1470282523769835742\" for channel messages."
       }
     },
     {
-      "id": "d6c651ef-67db-4e45-afd5-862d7110c666",
+      "id": "7535c773-c6e4-403f-ac49-98a27b040ba4",
       "name": "openclaw-skill-backup",
       "enabled": true,
-      "createdAtMs": 1770700841428,
-      "updatedAtMs": 1770700841428,
+      "createdAtMs": 1770701087936,
+      "updatedAtMs": 1770778916680,
       "schedule": {
         "kind": "cron",
         "expr": "0 11 * * *",
@@ -67,7 +71,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请执行OpenClaw每日技能备份并发送Discord报告:\\n\\n1. 进入目录: cd ~/.openclaw-git-backup\\n2. 运行备份脚本: python3 scripts/backup_cron.py\\n3. 读取报告: cat ~/.openclaw-git-backup/scripts/backup_report.md\\n4. **完整发送备份报告内容到Discord #技能备份报告频道**\\n\\n频道目标: channel:1470626297976721573\\n\\n发送格式: Markdown格式的报告内容",
+        "message": "请执行OpenClaw每日技能备份:\\n\\n1. 运行: cd ~/.openclaw-git-backup && python3 scripts/backup.py\\n2. 完成后，发送备份总结到#技能备份报告频道\\n\\n总结格式:\\n- 时间\\n- 提交ID\\n- 已备份内容\\n- 已排除内容",
         "timeoutSeconds": 180
       },
       "delivery": {
@@ -76,7 +80,10 @@
         "to": "channel:1470626297976721573"
       },
       "state": {
-        "nextRunAtMs": 1770778800000
+        "nextRunAtMs": 1770865200000,
+        "lastRunAtMs": 1770778885664,
+        "lastStatus": "ok",
+        "lastDurationMs": 31016
       }
     }
   ]

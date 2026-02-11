@@ -385,6 +385,16 @@ async function handleMessage(ctx) {
 
 ---
 
+## 核心认知 (2026-02-10)
+
+### 浏览器控制能力
+- **我是天生可以控制浏览器的**，不需要任何 extension
+- 使用 `browser` 工具的 `start` + `profile="openclaw"` 启动内置 Chrome
+- 可以直接 navigate, snapshot, screenshot 等
+- 参考文档：https://docs.openclaw.ai/tools/browser
+
+---
+
 ## Skill Vetter (2026-02-10)
 
 ### 目的
