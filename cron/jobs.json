@@ -7,7 +7,7 @@
       "name": "daily-intel-briefing",
       "enabled": true,
       "createdAtMs": 1770615011771,
-      "updatedAtMs": 1771031463347,
+      "updatedAtMs": 1771117382680,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -19,8 +19,8 @@
         "text": "🌅 每日 AI 情报时间！\n\n运行 intel-daily.sh 采集 8 个数据源并发送到 Discord。"
       },
       "state": {
-        "nextRunAtMs": 1771117200000,
-        "lastRunAtMs": 1771031463345,
+        "nextRunAtMs": 1771203600000,
+        "lastRunAtMs": 1771117382678,
         "lastStatus": "skipped",
         "lastDurationMs": 2,
         "lastError": "empty-heartbeat-file"
@@ -32,7 +32,7 @@
       "name": "daily-intel",
       "enabled": true,
       "createdAtMs": 1770693420537,
-      "updatedAtMs": 1771031525425,
+      "updatedAtMs": 1771118350788,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -49,11 +49,10 @@
         "channel": "discord"
       },
       "state": {
-        "nextRunAtMs": 1771117200000,
-        "lastRunAtMs": 1771031463347,
-        "lastStatus": "error",
-        "lastDurationMs": 62078,
-        "lastError": "Error: Ambiguous Discord recipient \"1470282523769835742\". Use \"user:1470282523769835742\" for DMs or \"channel:1470282523769835742\" for channel messages."
+        "nextRunAtMs": 1771203600000,
+        "lastRunAtMs": 1771117382680,
+        "lastStatus": "ok",
+        "lastDurationMs": 968108
       }
     },
     {
@@ -61,7 +60,7 @@
       "name": "openclaw-skill-backup",
       "enabled": true,
       "createdAtMs": 1770779539164,
-      "updatedAtMs": 1770996882075,
+      "updatedAtMs": 1771081225917,
       "schedule": {
         "kind": "cron",
         "expr": "0 23 * * *",
@@ -80,11 +79,11 @@
         "to": "channel:1470626297976721573"
       },
       "state": {
-        "nextRunAtMs": 1771081200000,
-        "lastRunAtMs": 1770995801772,
+        "nextRunAtMs": 1771167600000,
+        "lastRunAtMs": 1771081200032,
         "lastStatus": "ok",
-        "lastDurationMs": 1080303,
-        "runningAtMs": 1771081200028
+        "lastDurationMs": 25885,
+        "runningAtMs": 1771167600024
       }
     }
   ]
