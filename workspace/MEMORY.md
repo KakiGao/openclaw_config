@@ -72,6 +72,7 @@
 - `comment-responder` - ✅ (2026-02-10) 智能评论回复，区分用户消息和社交媒体评论
 - `skill-vetter` - ✅ (2026-02-10) 技能安装前自动安全审查
 - `humanizer-zh` - ✅ (2026-02-14) 去除 AI 写作痕迹，使文本更自然更像人手写
+- `xhs` - ✅ (2026-02-24) 小红书热点追踪、搜索、发布工具
 
 ## Discord 集成
 
@@ -486,6 +487,54 @@ NOTES: High risk detected. Review carefully before installation.
 ### 文件位置
 
 `/openclaw/skills/skill-vetter/SKILL.md`
+
+---
+
+## 小红书 XHS Skill (2026-02-24)
+
+### 已整合能力
+
+**项目位置**: `/Users/kaki/.openclaw/workspace/skills/xhs/`
+
+**MCP 服务**: http://localhost:18060/mcp (需先启动)
+
+**可用脚本**:
+- `search.sh <关键词>` - 搜索内容
+- `recommend.sh` - 获取推荐
+- `post-detail.sh <id> <token>` - 获取帖子详情
+- `comment.sh <id> <token> <内容>` - 发表评论
+- `user-profile.sh <user_id>` - 获取用户主页
+- `track-topic.sh <话题> --limit N` - 热点追踪
+- `export-long-image.sh --posts-file <json> -o <output>` - 长图导出
+- `mcp-call.sh <tool> <args>` - 通用 MCP 调用
+- `start-mcp.sh` / `stop-mcp.sh` / `status.sh` - 服务管理
+
+**Python 脚本**:
+- `track-topic.py` - 热点追踪分析
+- `export-long-image.py` - 长图导出
+
+**MCP 工具**:
+- `search_feeds` - 搜索
+- `get_feed_detail` - 详情+评论
+- `post_comment_to_feed` - 评论
+- `user_profile` - 用户主页
+- `like_feed` / `favorite_feed` - 点赞收藏
+- `publish_content` / `publish_with_video` - 发布
+
+### 使用示例
+
+```bash
+cd /Users/kaki/.openclaw/workspace/skills/xhs/scripts
+
+# 搜索
+./search.sh "AI教程"
+
+# 追踪热点
+./track-topic.py "AI视频" --limit 10
+
+# 获取详情
+./mcp-call.sh get_feed_detail '{"feed_id":"xxx","xsec_token":"xxx"}'
+```
 
 ---
 

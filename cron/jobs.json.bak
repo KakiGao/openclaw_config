@@ -61,7 +61,7 @@
       "name": "openclaw-skill-backup",
       "enabled": true,
       "createdAtMs": 1770779539164,
-      "updatedAtMs": 1771860464439,
+      "updatedAtMs": 1771945254515,
       "schedule": {
         "kind": "cron",
         "expr": "0 23 * * *",
@@ -80,11 +80,10 @@
         "to": "channel:1470626297976721573"
       },
       "state": {
-        "nextRunAtMs": 1771945200000,
-        "lastRunAtMs": 1771859438443,
+        "nextRunAtMs": 1772031600000,
+        "lastRunAtMs": 1771945200007,
         "lastStatus": "ok",
-        "lastDurationMs": 1025996,
-        "runningAtMs": 1771945200005
+        "lastDurationMs": 54508
       }
     }
   ]

@@ -37,4 +37,35 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+## XHS (小红书)
+
+**Skill 位置**: `/Users/kaki/.openclaw/workspace/skills/xhs/`
+
+**MCP 服务**: http://localhost:18060/mcp (需要先运行 `./start-mcp.sh`)
+
+**快捷命令**:
+```bash
+# 搜索
+xhs-search() { cd /Users/kaki/.openclaw/workspace/skills/xhs/scripts && ./search.sh "$1"; }
+
+# 追踪热点
+xhs-track() { cd /Users/kaki/.openclaw/workspace/skills/xhs/scripts && ./track-topic.py "$1" --limit ${2:-10}; }
+
+# 获取详情
+xhs-detail() { cd /Users/kaki/.openclaw/workspace/skills/xhs/scripts && ./mcp-call.sh get_feed_detail "{\"feed_id\":\"$1\",\"xsec_token\":\"$2\"}"; }
+
+# 检查状态
+xhs-status() { cd /Users/kaki/.openclaw/workspace/skills/xhs/scripts && ./status.sh; }
+```
+
+**常用调用**:
+```bash
+cd /Users/kaki/.openclaw/workspace/skills/xhs/scripts
+./search.sh "关键词"
+./track-topic.py "AI" --limit 10
+./mcp-call.sh search_feeds '{"keyword": "AI"}'
+```
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.
