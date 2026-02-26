@@ -1,0 +1,50 @@
+{
+  "name": "intel-collector",
+  "description": "AI Intelligence Collector - Daily intelligence gathering and analysis for market trends, revenue opportunities, and alpha signals.",
+  "sources": {
+    "hacker_news": {
+      "enabled": true,
+      "description": "Tech trends and discussions"
+    },
+    "github_trending": {
+      "enabled": true,
+      "description": "Open source project trends"
+    },
+    "product_hunt": {
+      "enabled": true,
+      "description": "New product launches",
+      "api_key": "${PRODUCTHUNT_TOKEN}"
+    },
+    "arxiv_ai": {
+      "enabled": true,
+      "description": "AI research papers"
+    },
+    "v2ex": {
+      "enabled": true,
+      "description": "Chinese tech community discussions"
+    },
+    "xhs": {
+      "enabled": false,
+      "description": "Xiaohongshu (Little Red Book)",
+      "api_key": "${XHS_COOKIE}"
+    },
+    "chrome_radar": {
+      "enabled": false,
+      "description": "Chrome extension opportunities"
+    },
+    "grok": {
+      "enabled": false,
+      "description": "X/Twitter Grok analysis",
+      "api_key": "${X_TOKEN}"
+    }
+  },
+  "api_keys": {
+    "required": [],
+    "optional": [
+      "PRODUCTHUNT_TOKEN",
+      "XHS_COOKIE",
+      "X_TOKEN",
+      "GITHUB_TOKEN"
+    ]
+  }
+}
