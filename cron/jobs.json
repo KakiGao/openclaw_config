@@ -7,7 +7,7 @@
       "name": "daily-intel-briefing",
       "enabled": true,
       "createdAtMs": 1770615011771,
-      "updatedAtMs": 1772067657419,
+      "updatedAtMs": 1772413672713,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -19,11 +19,10 @@
         "text": "🌅 每日 AI 情报时间！\n\n运行 intel-daily.sh 采集 8 个数据源并发送到 Discord。"
       },
       "state": {
-        "nextRunAtMs": 1772154000000,
-        "lastRunAtMs": 1772067657418,
-        "lastStatus": "skipped",
-        "lastDurationMs": 1,
-        "lastError": "empty-heartbeat-file"
+        "nextRunAtMs": 1772499600000,
+        "lastRunAtMs": 1772413652910,
+        "lastStatus": "ok",
+        "lastDurationMs": 19803
       }
     },
     {
@@ -32,7 +31,7 @@
       "name": "daily-intel",
       "enabled": true,
       "createdAtMs": 1770693420537,
-      "updatedAtMs": 1772068863751,
+      "updatedAtMs": 1772413692789,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -49,10 +48,11 @@
         "channel": "discord"
       },
       "state": {
-        "nextRunAtMs": 1772154000000,
-        "lastRunAtMs": 1772067657419,
-        "lastStatus": "ok",
-        "lastDurationMs": 1206332
+        "nextRunAtMs": 1772499600000,
+        "lastRunAtMs": 1772413672713,
+        "lastStatus": "error",
+        "lastDurationMs": 20076,
+        "lastError": "Error: Ambiguous Discord recipient \"1470282523769835742\". Use \"user:1470282523769835742\" for DMs or \"channel:1470282523769835742\" for channel messages."
       }
     },
     {
@@ -60,7 +60,7 @@
       "name": "openclaw-skill-backup",
       "enabled": true,
       "createdAtMs": 1770779539164,
-      "updatedAtMs": 1772031634757,
+      "updatedAtMs": 1772377829667,
       "schedule": {
         "kind": "cron",
         "expr": "0 23 * * *",
@@ -79,10 +79,11 @@
         "to": "channel:1470626297976721573"
       },
       "state": {
-        "nextRunAtMs": 1772118000000,
-        "lastRunAtMs": 1772031600009,
-        "lastStatus": "ok",
-        "lastDurationMs": 34748
+        "nextRunAtMs": 1772463600000,
+        "lastRunAtMs": 1772377522876,
+        "lastStatus": "error",
+        "lastDurationMs": 306791,
+        "runningAtMs": 1772463600011
       }
     }
   ]

@@ -29,3 +29,6 @@ __pycache__/
 .env
 *.key
 *.pem
+
+# Skip nested git repos
+skills/openclaw-git-backup/scripts/backup_repo/
