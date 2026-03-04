@@ -20,3 +20,4 @@
 {"ts":1772356970503,"jobId":"d16bb835-122d-4dba-b80e-3d33be0e9e66","action":"finished","status":"ok","summary":"🌅 每日 AI 情报时间！\n\n运行 intel-daily.sh 采集 8 个数据源并发送到 Discord。","runAtMs":1772356926063,"durationMs":44438,"nextRunAtMs":1772413200000}
 {"ts":1772413692792,"jobId":"d16bb835-122d-4dba-b80e-3d33be0e9e66","action":"finished","status":"ok","summary":"🌅 每日 AI 情报时间！\n\n运行 intel-daily.sh 采集 8 个数据源并发送到 Discord。","runAtMs":1772413652910,"durationMs":19803,"nextRunAtMs":1772499600000}
 {"ts":1772501826156,"jobId":"d16bb835-122d-4dba-b80e-3d33be0e9e66","action":"finished","status":"ok","summary":"🌅 每日 AI 情报时间！\n\n运行 intel-daily.sh 采集 8 个数据源并发送到 Discord。","runAtMs":1772500843787,"durationMs":982368,"nextRunAtMs":1772586000000}
+{"ts":1772588140775,"jobId":"d16bb835-122d-4dba-b80e-3d33be0e9e66","action":"finished","status":"ok","summary":"🌅 每日 AI 情报时间！\n\n运行 intel-daily.sh 采集 8 个数据源并发送到 Discord。","runAtMs":1772586180822,"durationMs":1057899,"nextRunAtMs":1772672400000}
