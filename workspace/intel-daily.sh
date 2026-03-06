@@ -162,8 +162,10 @@ echo ""
 echo "### 💻 GitHub Trending (Python)"
 python3 -c "
 import urllib.request,json
-d=__import__('datetime').date.today()
-r=urllib.request.urlopen(f'https://api.github.com/search/repositories?q=language:python+created:>={d.year}-{d.month:02d}-{d.day-7:02d}', timeout=10).read().decode()
+from datetime import date, timedelta
+d=date.today()
+week_ago = d - timedelta(days=7)
+r=urllib.request.urlopen(f'https://api.github.com/search/repositories?q=language:python+created:>={week_ago.isoformat()}', timeout=10).read().decode()
 for item in json.loads(r)['items'][:5]:
     print(f'  - [{item[\"full_name\"]}]({item[\"html_url\"]})')
     desc=item.get('description','')
