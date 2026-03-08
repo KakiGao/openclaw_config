@@ -7,7 +7,7 @@
       "name": "daily-intel-briefing",
       "enabled": true,
       "createdAtMs": 1770615011771,
-      "updatedAtMs": 1772847020255,
+      "updatedAtMs": 1772933379250,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -19,10 +19,10 @@
         "text": "🌅 每日 AI 情报时间！\n\n运行 intel-daily.sh 采集 8 个数据源并发送到 Discord。"
       },
       "state": {
-        "nextRunAtMs": 1772931600000,
-        "lastRunAtMs": 1772845997349,
+        "nextRunAtMs": 1773018000000,
+        "lastRunAtMs": 1772933379250,
         "lastStatus": "ok",
-        "lastDurationMs": 1022906
+        "lastDurationMs": 682704
       }
     },
     {
@@ -31,7 +31,7 @@
       "name": "daily-intel",
       "enabled": true,
       "createdAtMs": 1770693420537,
-      "updatedAtMs": 1772848004618,
+      "updatedAtMs": 1772933379250,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -48,10 +48,10 @@
         "channel": "discord"
       },
       "state": {
-        "nextRunAtMs": 1772931600000,
-        "lastRunAtMs": 1772847020255,
+        "nextRunAtMs": 1773018000000,
+        "lastRunAtMs": 1772934061956,
         "lastStatus": "ok",
-        "lastDurationMs": 984363
+        "lastDurationMs": 1078587
       }
     },
     {
@@ -59,7 +59,7 @@
       "name": "openclaw-skill-backup",
       "enabled": true,
       "createdAtMs": 1770779539164,
-      "updatedAtMs": 1772809269080,
+      "updatedAtMs": 1772895677007,
       "schedule": {
         "kind": "cron",
         "expr": "0 23 * * *",
@@ -78,11 +78,11 @@
         "to": "channel:1470626297976721573"
       },
       "state": {
-        "nextRunAtMs": 1772895600000,
-        "lastRunAtMs": 1772809200004,
+        "nextRunAtMs": 1772982000000,
+        "lastRunAtMs": 1772895600008,
         "lastStatus": "ok",
-        "lastDurationMs": 69076,
-        "runningAtMs": 1772895600006
+        "lastDurationMs": 76999,
+        "runningAtMs": 1772982013593
       }
     }
   ]
