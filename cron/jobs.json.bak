@@ -7,7 +7,7 @@
       "name": "daily-intel-briefing",
       "enabled": true,
       "createdAtMs": 1770615011771,
-      "updatedAtMs": 1773105726430,
+      "updatedAtMs": 1773198908973,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -19,10 +19,13 @@
         "text": "🌅 每日 AI 情报时间！\n\n运行 intel-daily.sh 采集 8 个数据源并发送到 Discord。"
       },
       "state": {
-        "nextRunAtMs": 1773190800000,
-        "lastRunAtMs": 1773105028299,
+        "nextRunAtMs": 1773277200000,
+        "lastRunAtMs": 1773198358166,
         "lastStatus": "ok",
-        "lastDurationMs": 698131
+        "lastDurationMs": 550807,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -31,7 +34,7 @@
       "name": "daily-intel",
       "enabled": true,
       "createdAtMs": 1770693420537,
-      "updatedAtMs": 1773106678660,
+      "updatedAtMs": 1773199024422,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -48,10 +51,14 @@
         "channel": "discord"
       },
       "state": {
-        "nextRunAtMs": 1773190800000,
-        "lastRunAtMs": 1773105726430,
+        "nextRunAtMs": 1773277200000,
+        "lastRunAtMs": 1773198908973,
         "lastStatus": "ok",
-        "lastDurationMs": 952230
+        "lastDurationMs": 115449,
+        "lastRunStatus": "ok",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -59,7 +66,7 @@
       "name": "openclaw-skill-backup",
       "enabled": true,
       "createdAtMs": 1770779539164,
-      "updatedAtMs": 1773068491582,
+      "updatedAtMs": 1773154918184,
       "schedule": {
         "kind": "cron",
         "expr": "0 23 * * *",
@@ -78,10 +85,14 @@
         "to": "channel:1470626297976721573"
       },
       "state": {
-        "nextRunAtMs": 1773154800000,
-        "lastRunAtMs": 1773068400010,
+        "nextRunAtMs": 1773241200000,
+        "lastRunAtMs": 1773154800016,
         "lastStatus": "ok",
-        "lastDurationMs": 91572
+        "lastDurationMs": 118168,
+        "lastRunStatus": "ok",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     }
   ]
