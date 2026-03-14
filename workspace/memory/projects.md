@@ -14,6 +14,11 @@
 - **数据源**: X/Twitter, Hacker News, GitHub, ArXiv
 - **待办**: [ ]
 
+### OpenHook 营销方案
+- **状态**: 活跃
+- **营销想法**: 短视频、免费工具、Waitlist、Glossary Marketing
+- **待办**: [ ]
+
 ---
 
-*最后更新: 2026-02-28*
+*最后更新: 2026-03-13*
