@@ -7,7 +7,7 @@
       "name": "daily-intel-briefing",
       "enabled": true,
       "createdAtMs": 1770615011771,
-      "updatedAtMs": 1773451394675,
+      "updatedAtMs": 1773537520837,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -19,13 +19,13 @@
         "text": "🌅 每日 AI 情报时间！\n\n运行 intel-daily.sh 采集 8 个数据源并发送到 Discord。"
       },
       "state": {
-        "nextRunAtMs": 1773536400000,
-        "lastRunAtMs": 1773450750787,
+        "nextRunAtMs": 1773622800000,
+        "lastRunAtMs": 1773536538897,
         "lastStatus": "error",
-        "lastDurationMs": 643888,
+        "lastDurationMs": 981940,
         "lastRunStatus": "error",
         "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 3,
+        "consecutiveErrors": 4,
         "lastError": "cron: job execution timed out"
       }
     },
@@ -35,7 +35,7 @@
       "name": "daily-intel",
       "enabled": true,
       "createdAtMs": 1770693420537,
-      "updatedAtMs": 1773452369596,
+      "updatedAtMs": 1773538542405,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -52,14 +52,14 @@
         "channel": "discord"
       },
       "state": {
-        "nextRunAtMs": 1773536400000,
-        "lastRunAtMs": 1773451394675,
+        "nextRunAtMs": 1773622800000,
+        "lastRunAtMs": 1773537520837,
         "lastStatus": "error",
-        "lastDurationMs": 974921,
+        "lastDurationMs": 1021568,
         "lastRunStatus": "error",
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 3,
+        "consecutiveErrors": 4,
         "lastError": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config."
       }
     },
@@ -68,7 +68,7 @@
       "name": "openclaw-skill-backup",
       "enabled": true,
       "createdAtMs": 1770779539164,
-      "updatedAtMs": 1773415046772,
+      "updatedAtMs": 1773500545427,
       "schedule": {
         "kind": "cron",
         "expr": "0 23 * * *",
@@ -87,14 +87,14 @@
         "to": "channel:1470626297976721573"
       },
       "state": {
-        "nextRunAtMs": 1773500400000,
-        "lastRunAtMs": 1773414000027,
-        "lastStatus": "error",
-        "lastDurationMs": 1046745,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 2,
-        "lastError": "cron: job execution timed out"
+        "nextRunAtMs": 1773586800000,
+        "lastRunAtMs": 1773500400281,
+        "lastStatus": "ok",
+        "lastDurationMs": 145146,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     }
   ]
