@@ -7,7 +7,7 @@
       "name": "daily-intel-briefing",
       "enabled": true,
       "createdAtMs": 1770615011771,
-      "updatedAtMs": 1773537520837,
+      "updatedAtMs": 1773710363789,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -19,13 +19,13 @@
         "text": "🌅 每日 AI 情报时间！\n\n运行 intel-daily.sh 采集 8 个数据源并发送到 Discord。"
       },
       "state": {
-        "nextRunAtMs": 1773622800000,
-        "lastRunAtMs": 1773536538897,
+        "nextRunAtMs": 1773795600000,
+        "lastRunAtMs": 1773709414694,
         "lastStatus": "error",
-        "lastDurationMs": 981940,
+        "lastDurationMs": 949095,
         "lastRunStatus": "error",
         "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 4,
+        "consecutiveErrors": 6,
         "lastError": "cron: job execution timed out"
       }
     },
@@ -35,7 +35,7 @@
       "name": "daily-intel",
       "enabled": true,
       "createdAtMs": 1770693420537,
-      "updatedAtMs": 1773538542405,
+      "updatedAtMs": 1773711484351,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -52,14 +52,14 @@
         "channel": "discord"
       },
       "state": {
-        "nextRunAtMs": 1773622800000,
-        "lastRunAtMs": 1773537520837,
+        "nextRunAtMs": 1773795600000,
+        "lastRunAtMs": 1773710363789,
         "lastStatus": "error",
-        "lastDurationMs": 1021568,
+        "lastDurationMs": 1120562,
         "lastRunStatus": "error",
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 4,
+        "consecutiveErrors": 6,
         "lastError": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config."
       }
     },
@@ -68,7 +68,7 @@
       "name": "openclaw-skill-backup",
       "enabled": true,
       "createdAtMs": 1770779539164,
-      "updatedAtMs": 1773500545427,
+      "updatedAtMs": 1773673468804,
       "schedule": {
         "kind": "cron",
         "expr": "0 23 * * *",
@@ -87,15 +87,14 @@
         "to": "channel:1470626297976721573"
       },
       "state": {
-        "nextRunAtMs": 1773586800000,
-        "lastRunAtMs": 1773500400281,
-        "lastStatus": "ok",
-        "lastDurationMs": 145146,
-        "lastRunStatus": "ok",
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true,
-        "runningAtMs": 1773586800016
+        "nextRunAtMs": 1773759600000,
+        "lastRunAtMs": 1773673200012,
+        "lastStatus": "error",
+        "lastDurationMs": 268792,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "runningAtMs": 1773759959974
       }
     }
   ]
