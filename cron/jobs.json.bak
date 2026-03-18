@@ -7,7 +7,7 @@
       "name": "daily-intel-briefing",
       "enabled": true,
       "createdAtMs": 1770615011771,
-      "updatedAtMs": 1773710363789,
+      "updatedAtMs": 1773798933781,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -19,14 +19,13 @@
         "text": "🌅 每日 AI 情报时间！\n\n运行 intel-daily.sh 采集 8 个数据源并发送到 Discord。"
       },
       "state": {
-        "nextRunAtMs": 1773795600000,
-        "lastRunAtMs": 1773709414694,
-        "lastStatus": "error",
-        "lastDurationMs": 949095,
-        "lastRunStatus": "error",
+        "nextRunAtMs": 1773882000000,
+        "lastRunAtMs": 1773798697343,
+        "lastStatus": "ok",
+        "lastDurationMs": 236438,
+        "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 6,
-        "lastError": "cron: job execution timed out"
+        "consecutiveErrors": 0
       }
     },
     {
@@ -35,7 +34,7 @@
       "name": "daily-intel",
       "enabled": true,
       "createdAtMs": 1770693420537,
-      "updatedAtMs": 1773711484351,
+      "updatedAtMs": 1773799838994,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -52,14 +51,14 @@
         "channel": "discord"
       },
       "state": {
-        "nextRunAtMs": 1773795600000,
-        "lastRunAtMs": 1773710363789,
+        "nextRunAtMs": 1773882000000,
+        "lastRunAtMs": 1773798933781,
         "lastStatus": "error",
-        "lastDurationMs": 1120562,
+        "lastDurationMs": 905213,
         "lastRunStatus": "error",
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 6,
+        "consecutiveErrors": 7,
         "lastError": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config."
       }
     },
@@ -68,7 +67,7 @@
       "name": "openclaw-skill-backup",
       "enabled": true,
       "createdAtMs": 1770779539164,
-      "updatedAtMs": 1773673468804,
+      "updatedAtMs": 1773761050244,
       "schedule": {
         "kind": "cron",
         "expr": "0 23 * * *",
@@ -87,13 +86,13 @@
         "to": "channel:1470626297976721573"
       },
       "state": {
-        "nextRunAtMs": 1773759600000,
-        "lastRunAtMs": 1773673200012,
+        "nextRunAtMs": 1773846000000,
+        "lastRunAtMs": 1773759959988,
         "lastStatus": "error",
-        "lastDurationMs": 268792,
+        "lastDurationMs": 1090256,
         "lastRunStatus": "error",
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
+        "consecutiveErrors": 2,
         "lastError": "cron: job execution timed out"
       }
     }
