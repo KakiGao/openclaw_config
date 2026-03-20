@@ -1,0 +1,11 @@
+{
+  "platform": "openclaw",
+  "language": "bilingual",
+  "timezone": "Asia/Shanghai",
+  "frequency": "daily",
+  "deliveryTime": "09:00",
+  "delivery": {
+    "method": "stdout"
+  },
+  "onboardingComplete": true
+}

@@ -7,7 +7,7 @@
       "name": "daily-intel-briefing",
       "enabled": true,
       "createdAtMs": 1770615011771,
-      "updatedAtMs": 1773798933781,
+      "updatedAtMs": 1773968734851,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -19,10 +19,10 @@
         "text": "🌅 每日 AI 情报时间！\n\n运行 intel-daily.sh 采集 8 个数据源并发送到 Discord。"
       },
       "state": {
-        "nextRunAtMs": 1773882000000,
-        "lastRunAtMs": 1773798697343,
+        "nextRunAtMs": 1774054800000,
+        "lastRunAtMs": 1773968614594,
         "lastStatus": "ok",
-        "lastDurationMs": 236438,
+        "lastDurationMs": 120257,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
@@ -34,7 +34,7 @@
       "name": "daily-intel",
       "enabled": true,
       "createdAtMs": 1770693420537,
-      "updatedAtMs": 1773799838994,
+      "updatedAtMs": 1773969076103,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -51,15 +51,14 @@
         "channel": "discord"
       },
       "state": {
-        "nextRunAtMs": 1773882000000,
-        "lastRunAtMs": 1773798933781,
-        "lastStatus": "error",
-        "lastDurationMs": 905213,
-        "lastRunStatus": "error",
+        "nextRunAtMs": 1774054800000,
+        "lastRunAtMs": 1773968734851,
+        "lastStatus": "ok",
+        "lastDurationMs": 341252,
+        "lastRunStatus": "ok",
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 7,
-        "lastError": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config."
+        "consecutiveErrors": 0
       }
     },
     {
@@ -67,7 +66,7 @@
       "name": "openclaw-skill-backup",
       "enabled": true,
       "createdAtMs": 1770779539164,
-      "updatedAtMs": 1773761050244,
+      "updatedAtMs": 1773932868952,
       "schedule": {
         "kind": "cron",
         "expr": "0 23 * * *",
@@ -86,14 +85,48 @@
         "to": "channel:1470626297976721573"
       },
       "state": {
-        "nextRunAtMs": 1773846000000,
-        "lastRunAtMs": 1773759959988,
+        "nextRunAtMs": 1774018800000,
+        "lastRunAtMs": 1773932688880,
         "lastStatus": "error",
-        "lastDurationMs": 1090256,
+        "lastDurationMs": 180072,
         "lastRunStatus": "error",
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 2,
+        "consecutiveErrors": 4,
         "lastError": "cron: job execution timed out"
+      }
+    },
+    {
+      "id": "f4705869-d8ac-46c6-8bfe-c04937ae1443",
+      "agentId": "main",
+      "name": "follow-builders",
+      "enabled": true,
+      "createdAtMs": 1773904813608,
+      "updatedAtMs": 1773969233381,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 follow-builders skill 并发送到两个 #ai情报 频道 (1470432395424694384 和 1470437628074791023)：\\n\\n1. 运行: cd ~/.openclaw/skills/follow-builders/scripts && node prepare-digest.js\\n2. 生成 AI Builders 摘要\\n3. 使用 message send 工具发送到两个 Discord 频道",
+        "timeoutSeconds": 180
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord:1484087839107846216"
+      },
+      "state": {
+        "nextRunAtMs": 1774054800000,
+        "lastRunAtMs": 1773969076103,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 157278,
+        "lastError": "Channel is required when multiple channels are configured: discord, feishu Set delivery.channel explicitly or use a main session with a previous channel.",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
       }
     }
   ]
