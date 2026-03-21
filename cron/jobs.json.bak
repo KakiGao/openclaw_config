@@ -7,7 +7,7 @@
       "name": "daily-intel-briefing",
       "enabled": true,
       "createdAtMs": 1770615011771,
-      "updatedAtMs": 1773968734851,
+      "updatedAtMs": 1774054864575,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -19,10 +19,10 @@
         "text": "🌅 每日 AI 情报时间！\n\n运行 intel-daily.sh 采集 8 个数据源并发送到 Discord。"
       },
       "state": {
-        "nextRunAtMs": 1774054800000,
-        "lastRunAtMs": 1773968614594,
+        "nextRunAtMs": 1774141200000,
+        "lastRunAtMs": 1774054800034,
         "lastStatus": "ok",
-        "lastDurationMs": 120257,
+        "lastDurationMs": 64541,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
@@ -34,7 +34,7 @@
       "name": "daily-intel",
       "enabled": true,
       "createdAtMs": 1770693420537,
-      "updatedAtMs": 1773969076103,
+      "updatedAtMs": 1774055001624,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -51,10 +51,10 @@
         "channel": "discord"
       },
       "state": {
-        "nextRunAtMs": 1774054800000,
-        "lastRunAtMs": 1773968734851,
+        "nextRunAtMs": 1774141200000,
+        "lastRunAtMs": 1774054864575,
         "lastStatus": "ok",
-        "lastDurationMs": 341252,
+        "lastDurationMs": 137049,
         "lastRunStatus": "ok",
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
@@ -66,7 +66,7 @@
       "name": "openclaw-skill-backup",
       "enabled": true,
       "createdAtMs": 1770779539164,
-      "updatedAtMs": 1773932868952,
+      "updatedAtMs": 1774018896398,
       "schedule": {
         "kind": "cron",
         "expr": "0 23 * * *",
@@ -85,14 +85,14 @@
         "to": "channel:1470626297976721573"
       },
       "state": {
-        "nextRunAtMs": 1774018800000,
-        "lastRunAtMs": 1773932688880,
-        "lastStatus": "error",
-        "lastDurationMs": 180072,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 4,
-        "lastError": "cron: job execution timed out"
+        "nextRunAtMs": 1774105200000,
+        "lastRunAtMs": 1774018800012,
+        "lastStatus": "ok",
+        "lastDurationMs": 96386,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -101,7 +101,7 @@
       "name": "follow-builders",
       "enabled": true,
       "createdAtMs": 1773904813608,
-      "updatedAtMs": 1773969233381,
+      "updatedAtMs": 1774055122756,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -119,14 +119,14 @@
         "channel": "discord:1484087839107846216"
       },
       "state": {
-        "nextRunAtMs": 1774054800000,
-        "lastRunAtMs": 1773969076103,
+        "nextRunAtMs": 1774141200000,
+        "lastRunAtMs": 1774055001624,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 157278,
-        "lastError": "Channel is required when multiple channels are configured: discord, feishu Set delivery.channel explicitly or use a main session with a previous channel.",
+        "lastDurationMs": 121132,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1
+        "consecutiveErrors": 2,
+        "lastError": "Channel is required when multiple channels are configured: discord, feishu Set delivery.channel explicitly or use a main session with a previous channel."
       }
     }
   ]
