@@ -12,7 +12,7 @@
 - **状态**: 活跃
 - **说明**: 每日AI行业情报收集与推送
 - **数据源**: X/Twitter, Hacker News, GitHub, ArXiv
-- **待办**: [ ]
+- **待办**: [ ] ArXiv API 速率限制需添加退避重试
 
 ### OpenHook 营销方案
 - **状态**: 活跃
