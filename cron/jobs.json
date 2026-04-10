@@ -7,7 +7,7 @@
       "name": "daily-intel-briefing",
       "enabled": true,
       "createdAtMs": 1770615011771,
-      "updatedAtMs": 1775611215552,
+      "updatedAtMs": 1775783593325,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -19,14 +19,13 @@
         "text": "🌅 每日 AI 情报时间！\n\n运行 intel-daily.sh 采集 8 个数据源并发送到 Discord。"
       },
       "state": {
-        "nextRunAtMs": 1775696400000,
-        "lastRunAtMs": 1775610230917,
-        "lastStatus": "error",
-        "lastDurationMs": 984635,
-        "lastRunStatus": "error",
+        "nextRunAtMs": 1775869200000,
+        "lastRunAtMs": 1775782864958,
+        "lastStatus": "ok",
+        "lastDurationMs": 728367,
+        "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 1,
-        "lastError": "cron: job execution timed out"
+        "consecutiveErrors": 0
       }
     },
     {
@@ -35,7 +34,7 @@
       "name": "daily-intel",
       "enabled": true,
       "createdAtMs": 1770693420537,
-      "updatedAtMs": 1775611977591,
+      "updatedAtMs": 1775786255110,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -52,14 +51,14 @@
         "channel": "discord"
       },
       "state": {
-        "nextRunAtMs": 1775696400000,
-        "lastRunAtMs": 1775611215552,
+        "nextRunAtMs": 1775869200000,
+        "lastRunAtMs": 1775783593325,
         "lastStatus": "error",
-        "lastDurationMs": 762039,
+        "lastDurationMs": 2661785,
         "lastRunStatus": "error",
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 17,
-        "lastError": "TypeError: fetch failed"
+        "consecutiveErrors": 19,
+        "lastError": "AbortError: This operation was aborted"
       }
     },
     {
@@ -67,7 +66,7 @@
       "name": "openclaw-skill-backup",
       "enabled": true,
       "createdAtMs": 1770779539164,
-      "updatedAtMs": 1775574180150,
+      "updatedAtMs": 1775747077208,
       "schedule": {
         "kind": "cron",
         "expr": "0 23 * * *",
@@ -86,14 +85,14 @@
         "to": "channel:1470626297976721573"
       },
       "state": {
-        "nextRunAtMs": 1775660400000,
-        "lastRunAtMs": 1775574000046,
+        "nextRunAtMs": 1775833200000,
+        "lastRunAtMs": 1775746897043,
         "lastStatus": "error",
-        "lastDurationMs": 180104,
+        "lastDurationMs": 180165,
         "lastRunStatus": "error",
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 12,
-        "runningAtMs": 1775660400015
+        "consecutiveErrors": 1,
+        "runningAtMs": 1775833200004
       }
     },
     {
@@ -102,7 +101,7 @@
       "name": "follow-builders",
       "enabled": true,
       "createdAtMs": 1773904813608,
-      "updatedAtMs": 1775612157631,
+      "updatedAtMs": 1775786525015,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -120,13 +119,13 @@
         "channel": "discord:1484087839107846216"
       },
       "state": {
-        "nextRunAtMs": 1775696400000,
-        "lastRunAtMs": 1775611977591,
+        "nextRunAtMs": 1775869200000,
+        "lastRunAtMs": 1775786255110,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 180040,
+        "lastDurationMs": 269905,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 20,
+        "consecutiveErrors": 22,
         "lastError": "cron: job execution timed out"
       }
     }
