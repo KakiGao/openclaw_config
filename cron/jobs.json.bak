@@ -26,7 +26,7 @@
         "lastRunStatus": "error",
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 3,
-        "lastError": "cron: job execution timed out"
+        "runningAtMs": 1776128409821
       }
     },
     {
@@ -59,7 +59,7 @@
         "lastRunStatus": "error",
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 22,
-        "lastError": "AbortError: This operation was aborted"
+        "runningAtMs": 1776128409821
       }
     },
     {
@@ -67,7 +67,7 @@
       "name": "openclaw-skill-backup",
       "enabled": true,
       "createdAtMs": 1770779539164,
-      "updatedAtMs": 1776006180037,
+      "updatedAtMs": 1776092580054,
       "schedule": {
         "kind": "cron",
         "expr": "0 23 * * *",
@@ -86,13 +86,13 @@
         "to": "channel:1470626297976721573"
       },
       "state": {
-        "nextRunAtMs": 1776092400000,
-        "lastRunAtMs": 1776006000012,
+        "nextRunAtMs": 1776178800000,
+        "lastRunAtMs": 1776092400011,
         "lastStatus": "error",
-        "lastDurationMs": 180025,
+        "lastDurationMs": 180043,
         "lastRunStatus": "error",
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 4,
+        "consecutiveErrors": 5,
         "lastError": "cron: job execution timed out"
       }
     },
@@ -127,7 +127,7 @@
         "lastDurationMs": 206056,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 25,
-        "lastError": "cron: job execution timed out"
+        "runningAtMs": 1776128409821
       }
     }
   ]
