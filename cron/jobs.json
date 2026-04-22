@@ -7,7 +7,6 @@
       "name": "daily-intel-briefing",
       "enabled": true,
       "createdAtMs": 1770615011771,
-      "updatedAtMs": 1776129474041,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -18,16 +17,7 @@
         "kind": "systemEvent",
         "text": "🌅 每日 AI 情报时间！\n\n运行 intel-daily.sh 采集 8 个数据源并发送到 Discord。"
       },
-      "state": {
-        "nextRunAtMs": 1776214800000,
-        "lastRunAtMs": 1776128409837,
-        "lastStatus": "error",
-        "lastDurationMs": 1064204,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 4,
-        "runningAtMs": 1776841694329
-      }
+      "state": {}
     },
     {
       "id": "e13762b0-a69b-41dc-9e7b-4882b6a8deb3",
@@ -35,7 +25,6 @@
       "name": "daily-intel",
       "enabled": true,
       "createdAtMs": 1770693420537,
-      "updatedAtMs": 1776133125208,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *"
@@ -51,23 +40,13 @@
         "to": "1470282523769835742",
         "channel": "discord"
       },
-      "state": {
-        "nextRunAtMs": 1776214800000,
-        "lastRunAtMs": 1776129474041,
-        "lastStatus": "error",
-        "lastDurationMs": 3651167,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 23,
-        "runningAtMs": 1776841694329
-      }
+      "state": {}
     },
     {
       "id": "59731767-1bfb-48ce-8f35-371bd17ab3f7",
       "name": "openclaw-skill-backup",
       "enabled": true,
       "createdAtMs": 1770779539164,
-      "updatedAtMs": 1776092580054,
       "schedule": {
         "kind": "cron",
         "expr": "0 23 * * *",
@@ -85,16 +64,7 @@
         "channel": "discord",
         "to": "channel:1470626297976721573"
       },
-      "state": {
-        "nextRunAtMs": 1776178800000,
-        "lastRunAtMs": 1776092400011,
-        "lastStatus": "error",
-        "lastDurationMs": 180043,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 5,
-        "runningAtMs": 1776841694329
-      }
+      "state": {}
     },
     {
       "id": "f4705869-d8ac-46c6-8bfe-c04937ae1443",
@@ -102,7 +72,6 @@
       "name": "follow-builders",
       "enabled": true,
       "createdAtMs": 1773904813608,
-      "updatedAtMs": 1776133305244,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -119,16 +88,7 @@
         "mode": "announce",
         "channel": "discord:1484087839107846216"
       },
-      "state": {
-        "nextRunAtMs": 1776214800000,
-        "lastRunAtMs": 1776133125208,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 180036,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 26,
-        "runningAtMs": 1776841694329
-      }
+      "state": {}
     }
   ]
 }
